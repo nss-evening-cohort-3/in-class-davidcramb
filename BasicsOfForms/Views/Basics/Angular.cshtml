@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Angular";
+}
+<section ng-controller="BasicsCtrl">
+
+<h2>Angular</h2>
+@using (Html.BeginForm("submit", "AngularApiController", "method = POST"))
+{
+        @Html.TextBox("email")
+        @Html.TextBox("password")
+        @Html.TextBox("passwordvalidation")
+        <button class="btn" ng-click="formSubmit($event, user)">Submit</button>
+}
+@{ Html.EndForm();}
+
+</section>

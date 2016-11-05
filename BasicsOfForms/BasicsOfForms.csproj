@@ -254,7 +254,7 @@
     <Content Include="Views\Basics\Index.cshtml" />
     <Content Include="Views\Basics\ViewPage1.cshtml" />
     <Content Include="Views\Basics\Razor.cshtml" />
-    <Content Include="Views\Angular.cshtml" />
+    <Content Include="Views\Basics\Angular.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
