@@ -1,0 +1,15 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using (Html.BeginForm())
+{
+
+    @Html.AntiForgeryToken();
+    @Html.TextBox("email")
+    @Html.Password("password")
+    @Html.Password("passwordvalidation")
+    <input type="submit" name="submit" value="Submit" />
+}
+@{Html.EndForm();}
+
+

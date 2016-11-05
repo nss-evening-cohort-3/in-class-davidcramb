@@ -2,6 +2,8 @@
 
 app.controller("BasicsCtrl", ["$scope", function($scope){
 
-    $scope.welcome = "hi";
+    $scope.formSubmit = () => {
+        console.log("hi!");
+    }
 
 }]);

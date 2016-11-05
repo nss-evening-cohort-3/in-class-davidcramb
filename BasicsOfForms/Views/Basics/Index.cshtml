@@ -4,14 +4,13 @@
 }
 <section ng-controller="BasicsCtrl">
     <h2>Razor</h2>
-    @using (Html.BeginForm())
-    {
+    <form>
+        <input type="text" name="email" />
+        <input type="password" name="password" />
+        <input type="password" name="passwordvalidation" />
+        <input type="submit" />
 
-    @Html.AntiForgeryToken();
-    @Html.TextBox("email")
-    @Html.Password("password")
-    @Html.Password("passwordvalidation")
-    <input type="submit" name="submit" value="Submit" />
-    }
-    @{Html.EndForm();}
+    </form>
+
 </section>
+    
